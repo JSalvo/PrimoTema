@@ -1,0 +1,47 @@
+@import 'presets';
+
+.header_menu_table
+{
+	width: 100%;
+
+	tr
+	{
+		td
+		{
+			padding-left: 2px;
+			padding-right: 2px;
+
+			div
+			{
+				height: 30px;
+				text-align: center;
+				color:white;
+				font-size: 16px;
+				line-height: 30px;
+				vertical-align: middle;
+				font-weight: bold;
+				background-color: $primary_color;
+			}
+
+			div:hover
+			{
+				cursor: pointer;
+				background-color: $secondary_color;
+			}
+
+		}
+
+		:first-child
+		{
+			padding-left: 0px;
+		}
+
+		:last-child
+		{
+			padding-right: 0px;
+		}
+
+	}
+
+
+}

@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-xs-3">
+		<%= image_tag article.images[0].get_150x150, width: "100%" %>
+	</div>
+	<div class="col-xs-9">
+		<h5><%= article.title.capitalize %></h5>
+		<div class="text-muted time-and-owner">
+			<span class="glyphicon glyphicon-time"></span> <%= article.creation_date %>
+
+			<span class="glyphicon glyphicon-user"></span> Supervisore
+		</div>
+	</div>
+</div>

@@ -1,0 +1,42 @@
+
+
+<div class="container">
+	<% a = Article.all.first %>
+	<% cs = Category.all %>
+
+	<%= render "www/common/navbar" %>
+
+	<div class="row">
+		<div class="col-lg-3">
+			<%= render 'www/common/menu_header_3' %>
+
+			<% 5.times.each do |i| %>
+				<%= render 'www/common/medium_article_link', article: a %>
+			<% end %>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<%= render "www/common/categories_menu", categories: cs %>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-6">
+			<div class="row">
+				<%= render 'www/common/article', article: a %>
+			</div>
+
+			<div class="row">
+				<%= render 'www/common/reply/form' %>
+			</div>
+		</div>
+
+		<div class="col-lg-3">
+			<%= render 'www/common/menu_header_2' %>
+			<% 8.times.each do |i| %>
+				<%= render 'www/common/small_article_link', article: a %>
+				<hr style="margin-top:10px; margin-bottom:10px;"></hr>
+			<% end %>
+		</div>
+	</div>
+</div>

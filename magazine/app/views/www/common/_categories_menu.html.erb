@@ -1,0 +1,12 @@
+<%= render "www/common/menu_header", label: "Categorie" %>
+
+<div class="row">
+
+	<% categories.each do |category| %>
+	<div class="col-xs-12" style="padding-top:1rem;">
+
+		<span class="red-folder"><i class="fa fa-folder-open-o" aria-hidden="true"></i> </span> &nbsp <%= category.name %>
+
+	</div>
+	<% end %>
+</div>

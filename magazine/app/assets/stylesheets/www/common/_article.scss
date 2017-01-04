@@ -1,0 +1,21 @@
+@import "presets";
+
+
+.article-body
+{
+	padding-top:1rem;
+}
+
+.article-categories
+{
+	background-color: $light_color;
+	padding: 10px;
+}
+
+.previous-and-next-buttons
+{
+	width: 100%;
+	height: 32px;
+	background-color: $primary_color;
+	border-style: none;
+}

@@ -1,0 +1,13 @@
+<div class="row link-medium">
+	<div class="col-xs-4" >
+		<%= image_tag article.images[0].get_300x300, width: "100%" %>
+	</div>
+	<div class="col-xs-8">
+		<h4><%= article.title.capitalize %></h4>
+		<div class="text-muted time-and-owner">
+			<span class="glyphicon glyphicon-time"></span> <%= article.creation_date %>
+
+			<span class="glyphicon glyphicon-user"></span> Supervisore
+		</div>
+	</div>
+</div>

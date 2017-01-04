@@ -1,0 +1,36 @@
+@import "presets";
+
+.label-header
+{
+	color: white;
+	background-color: $secondary_color;
+
+	width: auto;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+
+.segments
+{
+	height: 2px;
+}
+
+.first-segment
+{
+	background-color: $secondary_color;
+	float:left;
+	width: 50%;
+}
+
+
+.second-segment
+{
+	background-color: $primary_color;
+	float: right;
+	width: 50%;
+}

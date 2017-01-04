@@ -1,0 +1,52 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2><%= article.title.capitalize %></h2>
+				<div class="text-muted time-and-owner">
+					<span class="glyphicon glyphicon-time"></span> <%= article.creation_date %>
+
+					<span class="glyphicon glyphicon-user"></span> Supervisore
+				</div>
+
+				<%= image_tag article.images[0].get_768x512, width: "100%" %>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 article-body">
+				<% article.paragraphs.each do |paragraph| %>
+					<p>
+						<%= paragraph.body %>
+					</p>
+				<% end %>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="article-categories">
+						<span class="glyphicon glyphicon-folder-open"></span> &nbsp Fashion, Musica, Notizie
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<hr></hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				<button class="previous-and-next-buttons"></button>
+			</div>
+			<div class="col-xs-6">
+				<button class="previous-and-next-buttons"></button>
+			</div>
+		</div>
+
+	</div>
+
+</div>
